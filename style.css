@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Pathway+Extreme:wght@100&family=Poppins:wght@400;500;600&family=Roboto:wght@100&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+nav {
+    background-color: #1b1b1b;
+    width: 100%;
+    padding: 10px 0;
+    position: fixed;
+    z-index: 12;
+}
+
+nav .menu {
+    max-width: 1270px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.menu .logo a {
+    font-size: 2rem;
+    text-decoration: none;
+    font-weight: 600;
+    color: #fff;
+}
+
+.menu ul {
+    display: inline-flex;
+}
+
+.menu ul li {
+    list-style-type: none;
+    margin-left: 7px;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    font-size: 1.01rem;
+    color: #fff;
+    font-weight: 500;
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: all 0.4s;
+}
+
+.menu ul li a:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+.img {
+    background: url('image-from-rawpixel-id-5912102-jpeg.jpg') no-repeat;
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+
+}
+
+.img::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(#ffffff21, #000000b6);
+
+}
+
+.center {
+    position: absolute;
+    top: 52%;
+    left: 50%;
+    width: 100%;
+    transform: translate(-50%, -50%);
+    padding: 0 20px;
+    text-align: center;
+}
+
+.center .title {
+    color: #fff;
+    font-size: 4.5rem;
+    font-weight: 600;
+    text-transform: capitalize;
+    text-shadow: 0 10px 15px rgba(0, 0, 0, 0.5);
+}
+
+.center .subtitle {
+    color: #fff;
+    font-size: 4.5rem;
+    font-weight: 600;
+    text-transform: capitalize;
+    text-shadow: 0 10px 15px rgba(0, 0, 0, 0.5);
+}
+
+.center .btns {
+    margin-top: 20px;
+}
+
+.center .btns button {
+    height: 55px;
+    width: 170px;
+    border-radius: 5px;
+    border: none;
+    margin: 0 10px;
+    border: 2px solid #fff;
+    font-size: 20px;
+    font-weight: 500;
+    cursor: pointer;
+    outline: none;
+    transition: all 0.4s;
+}
+
+.center .btns button:first-child {
+    background: none;
+    color: #fff;
+}
+
+.center .btns button:first-child:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+.center .btns button:active {
+    transform: scale(0.45);
+}
+
+@media (max-width:950px) {
+    .center .title {
+        font-size: 10vw;
+
+    }
+
+    .center .subtitle {
+        font-size: 10vw;
+
+    }
+}
+
+@media (max-width:700px) {
+    .menu ul {
+        display: none;
+    }
+}
+
+@media (max-width:424px) {
+    .center .btns button {
+        margin-top: 10px;
+        height: 48px;
+        width: 160px;
+    }
+
+    .menu .logo a {
+        font-size: 1rem;
+    }
+}
